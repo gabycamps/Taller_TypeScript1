@@ -4,6 +4,7 @@ var seriesTbody = document.getElementById('series');
 var tableContainer = document.querySelector(".table-container");
 renderSeriesInTable(series);
 function renderSeriesInTable(series) {
+    console.log('Desplegando series');
     series.forEach(function (s) {
         var trElement = document.createElement("tr");
         trElement.innerHTML = "<td>".concat(s.id, "</td>\n                            <td>").concat(s.name, "</td>\n                            <td>").concat(s.channel, "</td>\n                            <td>").concat(s.seasons, "</td>");

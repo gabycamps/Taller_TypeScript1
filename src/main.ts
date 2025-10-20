@@ -8,6 +8,7 @@ renderSeriesInTable(series);
 
 function renderSeriesInTable(series: Serie[]): void {
 
+    console.log('Desplegando series');
     series.forEach(s => {
         let trElement = document.createElement("tr");
     trElement.innerHTML = `<td>${s.id}</td>
